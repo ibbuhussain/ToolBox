@@ -21,6 +21,10 @@ app.use(express.urlencoded({ extended: true }));
 // app.use('/public', express.static(path.join(__dirname, './public')));
  app.use(express.static(path.join(__dirname, '/public')));
 
+//_________________________ required js files ______________________________________________________________________________
+//const db = require("./jsLogic/db.js"); // Import the database connection in CJS
+ import db from "./public/jsLogic/database.js"; // Import the database connection in ES
+//____________REMEMBER__export is required in respective js files______________________________________________________________
 
 //__________________________BELOW ARE GET HANDLES__________________________________________________________
 app.get("/", (req, res) => {
