@@ -1,9 +1,25 @@
-/*¬¬¬¬Create a React App¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+/*------------------------------------------------------------------------------------------------------------------
+¬¬¬¬Create a React App¬¬¬¬¬¬¬¬¬¬¬¬¬¬
 npx create-react-app NameofReactApp
 cd NameofReactApp
 npm start
--------------------------------------*/
-//######################################### MAIN FILE #####################################################
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+npm create vite@latest
+folderName
+react
+js+SWC
+npm install
+npm run dev
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+------------------------------------------------------------------------------------------------------------------*/
+/* ¬¬¬¬¬¬¬ A L L   N O T E S   H E R E   F O R   R E A C T ¬¬¬¬¬¬¬¬¬¬¬
+1. <React.StrictMode> //React performs a set of checks and warnings during the rendering process.
+2. :: nameConvention for components: CAPITAL TAG with description
+3. :: nameConvention for arrow function: first letter lowercase all others UPPERCASE.  
+4. :: nameConvention for props:  while passing props add to suffix (1,2,3 etc) based on no. times its been passed.
+5.  function handleSubmit(e) { e.preventDefault() }  -- Prevents refresh of page on Submit.
+*/
+//############################################ MAIN FILE ##########################################################
 import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App"
@@ -17,7 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 //_______________App.jsx_________________________
 import { useEffect, useState } from "react"
 import "./styles.css"
-/*NOTES:: nameConvention : CAPITAL TAG with description*/
+/*NOTES:: nameConvention for components: CAPITAL TAG with description*/
 import {FORMoftodo} from "./components/FORMoftodo"
 import { ULtodo } from "./components/ULlis"
 
@@ -35,8 +51,9 @@ export default function App() {
 //---------------------------------------
 //____ F U N C T I O N   b e l o w ______
 function addTodo(title){
-return setTask((currentTask) => {   // addTodo Function in App file
-      return [...currentTask,
+  /*NOTES:: nameConvention for arrow function: first letter lowercase all others UPPERCASE*/  
+return setTask((cURRENTTASK) => {   
+      return [...cURRENTTASK,
       {
         id: crypto.randomUUID(), title,
         completed: false
@@ -47,20 +64,20 @@ return setTask((currentTask) => {   // addTodo Function in App file
 //---------------------------------------
 //____ F U N C T I O N   b e l o w ______
   function toggleTodo(id,completed) {
-    setTask(curT=>{
-      return curT.map(todd=>{
-        if(todd.id === id) return{ ...todd,completed}
-        return todd
+    setTask(cURT=>{
+      return cURT.map(tODD=>{
+        if(tODD.id === id) return{ ...tODD,completed}
+        return tODD
       }) //map close
     }) //setTask close  
   } // toggleTodo close
 //------------------------------------------------------------------------
 /*_______________ B E L O W - I S - J S X - c o d e______________________/
-NOTES :: nameConvention :  while passing props add to suffix (1,2,3 etc)
+NOTES :: nameConvention for props :  while passing props add to suffix (1,2,3 etc)
           based on no. times its been passed.
 //_______________________________________________________________________*/  
   return <>  //frangment tag to wrap multiple tags under one
-  /*NOTES:: nameConvention : CAPITAL TAG with description*/
+  /*NOTES:: nameConvention for components : CAPITAL TAG with description*/
 <FORMoftodo addTodo1 = {addTodo}/>  
     <h1 className="header"> Todo List </h1>
 <ULtodo  task1 ={task}  toogleTodo1 ={toggleTodo} deleteTodo1 ={deleteTodo}/>
