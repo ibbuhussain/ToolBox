@@ -16,8 +16,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 //_______________App.jsx_________________________
 import { useEffect, useState } from "react"
 import "./styles.css"
-import {TodoForm} from "./components/TodoForm"
-import { UlTodo } from "./components/UlLis"
+/*NOTES :: nameConvention :  CAPITAL TAG with description*/
+import {FORMoftodo} from "./components/FORMoftodo"
+import { ULTodo } from "./components/ULlis"
 
 export default function App() {  
 //---------------------------------------
@@ -58,9 +59,10 @@ NOTES :: nameConvention :  while passing props add to suffix (1,2,3 etc)
           based on no. times its been passed.
 //_______________________________________________________________________*/  
   return <>  //frangment tag to wrap multiple tags under one
-<TodoForm addTodoInTodoFOrm = {addTodo}/>  
+  /*NOTES :: nameConvention : CAPITAL TAG with description*/
+<FORMoftodo addTodoInTodoFOrm = {addTodo}/>  
     <h1 className="header"> Todo List </h1>
-<UlTodo taskItem = {task}  toogleTodo1 = {toggleTodo} deleteTodo1 = {deleteTodo}/>
+<ULTodo taskItem = {task}  toogleTodo1 = {toggleTodo} deleteTodo1 = {deleteTodo}/>
 // Fragment tag close
     </>
 } //App() CLOSE
