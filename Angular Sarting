@@ -1,0 +1,28 @@
+Step 1: Install Angular CLI:
+npm install -g @angular/cli
+_______________________________________________________________
+Step 2: Create a New Angular Project:
+ng new my-angular-app
+_______________________________________________________________
+Step 3: Serve Your Angular Application:
+ng serve
+_______________________________________________________________
+Step 4: Create a Component:
+ng generate component my-component
+_______________________________________________________________
+Step 5: Configure Routes:
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+
+const routes: Routes = [
+    { path: '', component: HomeComponent },
+    { path: 'about', component: AboutComponent },
+];
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
+export class AppRoutingModule { }
+_______________________________________________________________
