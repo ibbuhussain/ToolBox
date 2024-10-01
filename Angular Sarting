@@ -30,3 +30,5 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 _______________________________________________________________
+Step 6: If you want to use material package
+ng add @angular/material
