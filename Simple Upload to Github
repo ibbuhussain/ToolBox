@@ -1,0 +1,12 @@
+cd path/to/your/project <br>
+git init <br>
+
+git remote add origin https://github.com/your-username/your-repo-name.git <br>
+
+git add . <br>
+git commit -m "Initial commit" <br>
+
+git push -u origin main <br>
+
+or <br>
+git push -u origin main --force <br>
