@@ -10,3 +10,7 @@ git push -u origin main
 
 or 
 git push -u origin main --force 
+
+Rename Your Branch (if necessary) : 
+git branch -m master main
+
