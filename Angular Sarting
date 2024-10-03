@@ -5,10 +5,10 @@ Step 2: Create a New Angular Project:
 ng new my-angular-app --standalone false
 _______________________________________________________________
 Step 3: Serve Your Angular Application:
-ng serve
+ng serve   OR   ng server --open
 _______________________________________________________________
 Step 4: Create a Component:
-ng generate component my-component
+ng generate component my-component    OR   ng g c ComponnetName
 _______________________________________________________________
 Step 5: Configure Routes:  ==---In app-routing.module FILE---==
                             _________________________________
