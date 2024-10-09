@@ -1,14 +1,14 @@
 Step 1: Install Angular CLI:
-npm install -g @angular/cli
+> npm install -g @angular/cli
 _______________________________________________________________
 Step 2: Create a New Angular Project:
-ng new my-angular-app --standalone false
+> ng new my-angular-app --standalone false
 _______________________________________________________________
 Step 3: Serve Your Angular Application:
-ng serve   OR   ng serve --open
+> ng serve   OR   > ng serve --open
 _______________________________________________________________
 Step 4: Create a Component:
-ng generate component my-component    OR   ng g c ComponnetName
+> ng generate component my-component    OR   > ng g c ComponnetName
 _______________________________________________________________
 Step 5: Configure Routes:  ==---In app-routing.module FILE---==
                             _________________________________
@@ -31,4 +31,13 @@ export class AppRoutingModule { }
 
 _______________________________________________________________
 Step 6: If you want to use material package
-ng add @angular/material
+> ng add @angular/material
+_______________________________________________________________
+Step 7: If you want to use bootstrap in angular
+>  npm install bootstrap
+        Include the following script in angular.json file
+    "styles": [
+     "src/styles.css",
+     "node_modules/bootstrap/dist/css/bootstrap.min.css"
+             ],
+_______________________________________________________________
