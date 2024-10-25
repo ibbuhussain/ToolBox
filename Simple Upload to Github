@@ -1,16 +1,22 @@
 cd path/to/your/project 
 git init 
-
+_______________________________________________________________
 git remote add origin https://github.com/your-username/your-repo-name.git 
-
 git add . 
 git commit -m "Initial commit" 
-
+_______________________________________________________________
 git push -u origin main 
-
 or 
 git push -u origin main --force 
-
+_______________________________________________________________
 Rename Your Branch (if necessary) : 
 git branch -m master main
+_______________________________________________________________
+Pull from a Specific Remote (To copy from remote repo)
+git pull origin
 
+Pull from a Specific Branch:
+git pull origin main   (git pull <remote-name> <branch-name>)
+
+OR JUST,  git pull   ,to simply copy updated from repo
+_______________________________________________________________
