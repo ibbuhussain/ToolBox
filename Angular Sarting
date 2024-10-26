@@ -4,6 +4,9 @@ _______________________________________________________________
 Step 2: Create a New Angular Project:
 > ng new my-angular-app --standalone false
 _______________________________________________________________
+MUST RUN ANGULAR IN THE FOLDER WE HAVE CREATED.
+> cd my-angular-app
+_______________________________________________________________
 Step 3: Serve Your Angular Application:
 > ng serve   OR   > ng serve --open
 _______________________________________________________________
