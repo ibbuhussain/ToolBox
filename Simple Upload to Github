@@ -1,3 +1,14 @@
+_______________________________________________________________
+Delete local Git configuration (within a repository):
+git config user.name
+git config user.email
+    rm .git/config
+_______________________________________________________________
+Delete global Git configuration (typically located in your home directory):
+git config --global user.name
+git config --global user.email
+    rm ~/.gitconfig
+_______________________________________________________________
 cd path/to/your/project 
 git init 
 _______________________________________________________________
@@ -19,4 +30,10 @@ Pull from a Specific Branch:
 git pull origin main   (git pull <remote-name> <branch-name>)
 
 OR JUST,  git pull   ,to simply copy updated from repo
+_______________________________________________________________
+Delete local Git configuration (within a repository):
+rm .git/config
+_______________________________________________________________
+Delete global Git configuration (typically located in your home directory):
+rm ~/.gitconfig
 _______________________________________________________________
